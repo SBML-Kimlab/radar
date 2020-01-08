@@ -1,0 +1,389 @@
+debuggroup summary 1.28s welcome to circos v0.69-6 31 July 2017 on Perl 5.022001
+debuggroup summary 1.28s current working directory /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example
+debuggroup summary 1.28s command ../bin/circos -conf etc/circos.conf -debug_group summary,timer
+debuggroup summary 1.28s loading configuration from file etc/circos.conf
+debuggroup summary 1.31s found conf file etc/circos.conf
+debuggroup summary 3.92s debug will appear for these features: summary,timer
+debuggroup summary 3.93s bitmap output image ./circos.png
+debuggroup summary 3.93s SVG output image ./circos.svg
+debuggroup summary 3.96s parsing karyotype and organizing ideograms
+debuggroup summary 4.44s karyotype has 66 chromosomes of total size 8,540,079,869
+debuggroup summary 4.47s applying global and local scaling
+debuggroup summary 4.61s allocating image, colors and brushes
+debuggroup summary 19.65s drawing 24 ideograms of total size 3,344,416,167
+debuggroup summary 19.65s drawing highlights and ideograms
+debuggroup summary 22.59s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/link.conf
+debuggroup summary 22.61s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/link.conf
+debuggroup summary 22.64s process track_0 link /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/rn.bundle.txt
+debuggroup summary 23.42s process track_1 link /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/mm.bundle.txt
+debuggroup summary 23.63s drawing link track_0 z 0
+debuggroup summary 24.65s drawing link track_1 z 0
+debuggroup summary 24.79s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/highlight.conf
+debuggroup summary 24.82s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/highlight.conf
+debuggroup summary 24.83s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/text.conf
+debuggroup summary 24.85s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 24.88s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 24.90s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 24.92s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 24.93s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 24.95s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 24.98s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.00s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.02s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.02s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.03s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.04s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.04s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.05s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.06s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.07s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.07s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.08s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.09s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.10s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.10s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.11s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.12s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.12s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.14s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.16s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.18s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.20s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.22s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.24s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.26s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.30s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.31s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.32s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.33s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.34s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.35s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.35s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.36s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.37s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.38s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.40s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.42s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.44s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.46s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.47s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.49s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.49s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/heatmap.conf
+debuggroup summary 25.51s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.52s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.52s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.53s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.54s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.55s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.55s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.56s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.57s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.60s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.61s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.63s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.65s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.67s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.69s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.71s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.73s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.75s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.76s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.76s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.80s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.80s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.81s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.82s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.83s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.83s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.84s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.87s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/histogram.conf
+debuggroup summary 25.89s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.90s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/histogram.conf
+debuggroup summary 25.92s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/scatter.conf
+debuggroup summary 25.99s processing track_0 highlight /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/highlights.txt
+debuggroup summary 26.01s processing track_1 highlight /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/highlights.txt
+debuggroup summary 26.05s processing track_2 text /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/genes.txt
+debuggroup summary 27.13s processing track_3 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.hs.mm.20e6.txt
+debuggroup summary 27.22s processing track_4 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.hs.rn.20e6.txt
+debuggroup summary 27.29s processing track_5 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.hs.mm.10e6.txt
+debuggroup summary 27.42s processing track_6 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.hs.rn.10e6.txt
+debuggroup summary 27.55s processing track_7 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.1.txt
+debuggroup summary 27.64s processing track_8 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.2.txt
+debuggroup summary 27.72s processing track_9 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.3.txt
+debuggroup summary 27.78s processing track_10 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.4.txt
+debuggroup summary 27.83s processing track_11 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.5.txt
+debuggroup summary 27.88s processing track_12 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.6.txt
+debuggroup summary 27.93s processing track_13 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.7.txt
+debuggroup summary 27.99s processing track_14 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.8.txt
+debuggroup summary 28.13s processing track_15 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.9.txt
+debuggroup summary 28.18s processing track_16 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.10.txt
+debuggroup summary 28.22s processing track_17 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.11.txt
+debuggroup summary 28.28s processing track_18 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.12.txt
+debuggroup summary 28.32s processing track_19 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.13.txt
+debuggroup summary 28.38s processing track_20 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.14.txt
+debuggroup summary 28.44s processing track_21 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.15.txt
+debuggroup summary 28.50s processing track_22 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.16.txt
+debuggroup summary 28.54s processing track_23 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.17.txt
+debuggroup summary 28.59s processing track_24 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.18.txt
+debuggroup summary 28.65s processing track_25 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.19.txt
+debuggroup summary 28.71s processing track_26 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.20.txt
+debuggroup summary 28.76s processing track_27 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.21.txt
+debuggroup summary 28.81s processing track_28 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.22.txt
+debuggroup summary 28.86s processing track_29 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.1.txt
+debuggroup summary 28.94s processing track_30 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.2.txt
+debuggroup summary 29.04s processing track_31 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.3.txt
+debuggroup summary 29.15s processing track_32 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.4.txt
+debuggroup summary 29.23s processing track_33 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.5.txt
+debuggroup summary 29.29s processing track_34 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.6.txt
+debuggroup summary 29.37s processing track_35 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.7.txt
+debuggroup summary 29.45s processing track_36 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.8.txt
+debuggroup summary 29.52s processing track_37 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.9.txt
+debuggroup summary 29.61s processing track_38 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.10.txt
+debuggroup summary 29.71s processing track_39 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.11.txt
+debuggroup summary 29.77s processing track_40 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.12.txt
+debuggroup summary 29.84s processing track_41 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.13.txt
+debuggroup summary 29.91s processing track_42 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.14.txt
+debuggroup summary 29.98s processing track_43 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.15.txt
+debuggroup summary 30.06s processing track_44 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.16.txt
+debuggroup summary 30.19s processing track_45 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.17.txt
+debuggroup summary 30.31s processing track_46 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.18.txt
+debuggroup summary 30.38s processing track_47 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.19.txt
+debuggroup summary 30.45s processing track_48 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.20.txt
+debuggroup summary 30.55s processing track_49 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.21.txt
+debuggroup summary 30.63s processing track_50 heatmap /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.22.txt
+debuggroup summary 30.70s processing track_51 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.1.txt
+debuggroup summary 30.77s processing track_52 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.2.txt
+debuggroup summary 30.85s processing track_53 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.3.txt
+debuggroup summary 30.95s processing track_54 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.4.txt
+debuggroup summary 31.02s processing track_55 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.rn.5e6.hs.5.txt
+debuggroup summary 31.10s processing track_56 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.1.txt
+debuggroup summary 31.24s processing track_57 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.2.txt
+debuggroup summary 31.31s processing track_58 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.3.txt
+debuggroup summary 31.40s processing track_59 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.4.txt
+debuggroup summary 31.47s processing track_60 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.5.txt
+debuggroup summary 31.54s processing track_61 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.6.txt
+debuggroup summary 31.60s processing track_62 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.7.txt
+debuggroup summary 31.67s processing track_63 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.8.txt
+debuggroup summary 31.74s processing track_64 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.9.txt
+debuggroup summary 31.83s processing track_65 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.10.txt
+debuggroup summary 31.90s processing track_66 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.11.txt
+debuggroup summary 31.96s processing track_67 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.12.txt
+debuggroup summary 32.03s processing track_68 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.13.txt
+debuggroup summary 32.11s processing track_69 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.14.txt
+debuggroup summary 32.27s processing track_70 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.15.txt
+debuggroup summary 32.35s processing track_71 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.16.txt
+debuggroup summary 32.42s processing track_72 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.17.txt
+debuggroup summary 32.50s processing track_73 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.18.txt
+debuggroup summary 32.58s processing track_74 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.19.txt
+debuggroup summary 32.66s processing track_75 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.20.txt
+debuggroup summary 32.74s processing track_76 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.21.txt
+debuggroup summary 32.82s processing track_77 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.mm.5e6.hs.22.txt
+debuggroup summary 32.88s processing track_78 histogram /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.hs.mm.20e6.txt
+debuggroup summary 32.96s processing track_79 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.hs.mm.5e6.txt
+debuggroup summary 33.30s processing track_80 histogram /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.hs.rn.20e6.txt
+debuggroup summary 33.40s processing track_81 scatter /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/example/data/heatmap.hs.rn.5e6.txt
+debuggroup summary 33.63s drawing track_0 highlight z 0 highlights.txt 
+debuggroup summary 33.72s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 33.81s drawing track_1 highlight z 0 highlights.txt 
+debuggroup summary 33.81s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 33.86s drawing track_2 text z 0 genes.txt 
+debuggroup summary 33.92s placing text track data/genes.txt
+debuggroup summary 33.92s ... see progress with -debug_group text
+debuggroup summary 33.92s ... see placement summary with -debug_group textplace
+debuggroup summary 71.09s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 73.10s drawing track_3 heatmap z 0 heatmap.hs.mm.20e6.txt 
+debuggroup summary 73.18s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 73.37s drawing track_4 heatmap z 0 heatmap.hs.rn.20e6.txt 
+debuggroup summary 73.43s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 73.62s drawing track_5 heatmap z 0 heatmap.hs.mm.10e6.txt 
+debuggroup summary 73.64s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 73.97s drawing track_6 heatmap z 0 heatmap.hs.rn.10e6.txt 
+debuggroup summary 74.00s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 74.32s drawing track_7 heatmap z 0 heatmap.mm.5e6.hs.1.txt 
+debuggroup summary 74.40s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 74.49s drawing track_8 heatmap z 0 heatmap.mm.5e6.hs.2.txt 
+debuggroup summary 74.51s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 74.60s drawing track_9 heatmap z 0 heatmap.mm.5e6.hs.3.txt 
+debuggroup summary 74.60s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 74.67s drawing track_10 heatmap z 0 heatmap.mm.5e6.hs.4.txt 
+debuggroup summary 74.67s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 74.75s drawing track_11 heatmap z 0 heatmap.mm.5e6.hs.5.txt 
+debuggroup summary 74.76s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 74.82s drawing track_12 heatmap z 0 heatmap.mm.5e6.hs.6.txt 
+debuggroup summary 74.83s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 74.89s drawing track_13 heatmap z 0 heatmap.mm.5e6.hs.7.txt 
+debuggroup summary 74.90s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 74.97s drawing track_14 heatmap z 0 heatmap.mm.5e6.hs.8.txt 
+debuggroup summary 74.97s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.03s drawing track_15 heatmap z 0 heatmap.mm.5e6.hs.9.txt 
+debuggroup summary 75.04s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.11s drawing track_16 heatmap z 0 heatmap.mm.5e6.hs.10.txt 
+debuggroup summary 75.11s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.17s drawing track_17 heatmap z 0 heatmap.mm.5e6.hs.11.txt 
+debuggroup summary 75.18s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.24s drawing track_18 heatmap z 0 heatmap.mm.5e6.hs.12.txt 
+debuggroup summary 75.25s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.31s drawing track_19 heatmap z 0 heatmap.mm.5e6.hs.13.txt 
+debuggroup summary 75.31s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.38s drawing track_20 heatmap z 0 heatmap.mm.5e6.hs.14.txt 
+debuggroup summary 75.40s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.45s drawing track_21 heatmap z 0 heatmap.mm.5e6.hs.15.txt 
+debuggroup summary 75.47s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.53s drawing track_22 heatmap z 0 heatmap.mm.5e6.hs.16.txt 
+debuggroup summary 75.55s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.62s drawing track_23 heatmap z 0 heatmap.mm.5e6.hs.17.txt 
+debuggroup summary 75.62s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.67s drawing track_24 heatmap z 0 heatmap.mm.5e6.hs.18.txt 
+debuggroup summary 75.68s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.73s drawing track_25 heatmap z 0 heatmap.mm.5e6.hs.19.txt 
+debuggroup summary 75.74s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.79s drawing track_26 heatmap z 0 heatmap.mm.5e6.hs.20.txt 
+debuggroup summary 75.79s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.85s drawing track_27 heatmap z 0 heatmap.mm.5e6.hs.21.txt 
+debuggroup summary 75.85s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.91s drawing track_28 heatmap z 0 heatmap.mm.5e6.hs.22.txt 
+debuggroup summary 75.92s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 75.98s drawing track_29 heatmap z 0 heatmap.rn.5e6.hs.1.txt 
+debuggroup summary 75.98s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 76.06s drawing track_30 heatmap z 0 heatmap.rn.5e6.hs.2.txt 
+debuggroup summary 76.06s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 76.14s drawing track_31 heatmap z 0 heatmap.rn.5e6.hs.3.txt 
+debuggroup summary 76.14s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 76.21s drawing track_32 heatmap z 0 heatmap.rn.5e6.hs.4.txt 
+debuggroup summary 76.21s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 76.32s drawing track_33 heatmap z 0 heatmap.rn.5e6.hs.5.txt 
+debuggroup summary 76.32s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 76.38s drawing track_34 heatmap z 0 heatmap.rn.5e6.hs.6.txt 
+debuggroup summary 76.39s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 76.45s drawing track_35 heatmap z 0 heatmap.rn.5e6.hs.7.txt 
+debuggroup summary 76.54s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 76.61s drawing track_36 heatmap z 0 heatmap.rn.5e6.hs.8.txt 
+debuggroup summary 76.62s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 76.68s drawing track_37 heatmap z 0 heatmap.rn.5e6.hs.9.txt 
+debuggroup summary 76.68s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 76.74s drawing track_38 heatmap z 0 heatmap.rn.5e6.hs.10.txt 
+debuggroup summary 76.75s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 76.83s drawing track_39 heatmap z 0 heatmap.rn.5e6.hs.11.txt 
+debuggroup summary 76.84s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 76.91s drawing track_40 heatmap z 0 heatmap.rn.5e6.hs.12.txt 
+debuggroup summary 76.91s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 76.98s drawing track_41 heatmap z 0 heatmap.rn.5e6.hs.13.txt 
+debuggroup summary 76.99s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 77.06s drawing track_42 heatmap z 0 heatmap.rn.5e6.hs.14.txt 
+debuggroup summary 77.06s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 77.13s drawing track_43 heatmap z 0 heatmap.rn.5e6.hs.15.txt 
+debuggroup summary 77.14s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 77.20s drawing track_44 heatmap z 0 heatmap.rn.5e6.hs.16.txt 
+debuggroup summary 77.20s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 77.26s drawing track_45 heatmap z 0 heatmap.rn.5e6.hs.17.txt 
+debuggroup summary 77.27s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 77.34s drawing track_46 heatmap z 0 heatmap.rn.5e6.hs.18.txt 
+debuggroup summary 77.34s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 77.41s drawing track_47 heatmap z 0 heatmap.rn.5e6.hs.19.txt 
+debuggroup summary 77.41s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 77.47s drawing track_48 heatmap z 0 heatmap.rn.5e6.hs.20.txt 
+debuggroup summary 77.48s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 77.54s drawing track_49 heatmap z 0 heatmap.rn.5e6.hs.21.txt 
+debuggroup summary 77.62s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 77.69s drawing track_50 heatmap z 0 heatmap.rn.5e6.hs.22.txt 
+debuggroup summary 77.71s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 77.76s drawing track_51 scatter z 0 heatmap.rn.5e6.hs.1.txt orient out
+debuggroup summary 77.77s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 77.86s drawing track_52 scatter z 0 heatmap.rn.5e6.hs.2.txt orient out
+debuggroup summary 77.86s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 77.95s drawing track_53 scatter z 0 heatmap.rn.5e6.hs.3.txt orient out
+debuggroup summary 77.95s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.05s drawing track_54 scatter z 0 heatmap.rn.5e6.hs.4.txt orient out
+debuggroup summary 78.05s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.13s drawing track_55 scatter z 0 heatmap.rn.5e6.hs.5.txt orient out
+debuggroup summary 78.13s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.21s drawing track_56 scatter z 0 heatmap.mm.5e6.hs.1.txt orient out
+debuggroup summary 78.21s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.26s drawing track_57 scatter z 0 heatmap.mm.5e6.hs.2.txt orient out
+debuggroup summary 78.26s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.31s drawing track_58 scatter z 0 heatmap.mm.5e6.hs.3.txt orient out
+debuggroup summary 78.31s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.36s drawing track_59 scatter z 0 heatmap.mm.5e6.hs.4.txt orient out
+debuggroup summary 78.36s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.40s drawing track_60 scatter z 0 heatmap.mm.5e6.hs.5.txt orient out
+debuggroup summary 78.40s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.44s drawing track_61 scatter z 0 heatmap.mm.5e6.hs.6.txt orient out
+debuggroup summary 78.44s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.48s drawing track_62 scatter z 0 heatmap.mm.5e6.hs.7.txt orient out
+debuggroup summary 78.49s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.52s drawing track_63 scatter z 0 heatmap.mm.5e6.hs.8.txt orient out
+debuggroup summary 78.53s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.56s drawing track_64 scatter z 0 heatmap.mm.5e6.hs.9.txt orient out
+debuggroup summary 78.65s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.70s drawing track_65 scatter z 0 heatmap.mm.5e6.hs.10.txt orient out
+debuggroup summary 78.70s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.75s drawing track_66 scatter z 0 heatmap.mm.5e6.hs.11.txt orient out
+debuggroup summary 78.76s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.81s drawing track_67 scatter z 0 heatmap.mm.5e6.hs.12.txt orient out
+debuggroup summary 78.81s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.85s drawing track_68 scatter z 0 heatmap.mm.5e6.hs.13.txt orient out
+debuggroup summary 78.86s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.89s drawing track_69 scatter z 0 heatmap.mm.5e6.hs.14.txt orient out
+debuggroup summary 78.90s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.94s drawing track_70 scatter z 0 heatmap.mm.5e6.hs.15.txt orient out
+debuggroup summary 78.94s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 78.99s drawing track_71 scatter z 0 heatmap.mm.5e6.hs.16.txt orient out
+debuggroup summary 78.99s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 79.04s drawing track_72 scatter z 0 heatmap.mm.5e6.hs.17.txt orient out
+debuggroup summary 79.05s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 79.09s drawing track_73 scatter z 0 heatmap.mm.5e6.hs.18.txt orient out
+debuggroup summary 79.09s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 79.14s drawing track_74 scatter z 0 heatmap.mm.5e6.hs.19.txt orient out
+debuggroup summary 79.14s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 79.19s drawing track_75 scatter z 0 heatmap.mm.5e6.hs.20.txt orient out
+debuggroup summary 79.19s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 79.24s drawing track_76 scatter z 0 heatmap.mm.5e6.hs.21.txt orient out
+debuggroup summary 79.24s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 79.28s drawing track_77 scatter z 0 heatmap.mm.5e6.hs.22.txt orient out
+debuggroup summary 79.29s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 79.33s drawing track_78 histogram z 0 heatmap.hs.mm.20e6.txt orient out
+debuggroup summary 79.34s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 80.04s drawing track_79 scatter z 0 heatmap.hs.mm.5e6.txt orient out
+debuggroup summary 80.12s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 80.66s drawing track_80 histogram z 0 heatmap.hs.rn.20e6.txt orient in
+debuggroup summary 80.67s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup summary 81.13s drawing track_81 scatter z 0 heatmap.hs.rn.5e6.txt orient in
+debuggroup summary 81.30s found conf file /home/sierray/sbl_nas/sierray/antibiotics_/program/circos/circos-0.69-6/bin/../etc/tracks/axis.conf
+debuggroup timer 83.23s report circos 81.956 s
+debuggroup timer 83.23s report color 13.321 s
+debuggroup timer 83.23s report colordefinitions 1.085 s
+debuggroup timer 83.23s report colorfetch 0.121 s
+debuggroup timer 83.23s report colorlists 10.646 s
+debuggroup timer 83.23s report colorlookups 0.008 s
+debuggroup timer 83.23s report colortransparency 1.437 s
+debuggroup timer 83.23s report dataparams 1.204 s
+debuggroup timer 83.23s report datarules 3.273 s
+debuggroup timer 83.23s report graphic_png_polygon 0.813 s
+debuggroup timer 83.23s report graphic_slice 2.499 s
+debuggroup timer 83.23s report graphic_slice_polygon_coord 0.437 s
+debuggroup timer 83.23s report graphic_slice_polygon_svg 0.889 s
+debuggroup timer 83.23s report graphic_slice_preprocess 0.239 s
+debuggroup timer 83.23s report highlights 0.000 s
+debuggroup timer 83.23s report ideograms_draw 2.828 s
+debuggroup timer 83.23s report ideograms_processing 0.030 s
+debuggroup timer 83.23s report ideograms_ticks_draw 2.186 s
+debuggroup timer 83.23s report ideograms_zoom 0.131 s
+debuggroup timer 83.23s report io 1.284 s
+debuggroup timer 83.23s report karyotype 0.475 s
+debuggroup timer 83.23s report parameter_seek 5.050 s
+debuggroup timer 83.23s report track_heatmap 2.293 s
+debuggroup timer 83.23s report track_highlight 0.068 s
+debuggroup timer 83.23s report track_histogram 0.723 s
+debuggroup timer 83.23s report track_preprocess 0.559 s
+debuggroup timer 83.23s report track_scatter 1.445 s
+debuggroup timer 83.23s report track_text_ashift 26.990 s
+debuggroup timer 83.23s report track_text_ashiftiter 13.416 s
+debuggroup timer 83.23s report track_text_draw 1.739 s
+debuggroup timer 83.23s report track_text_place 37.106 s
+debuggroup timer 83.23s report track_text_preashift 8.893 s
+debuggroup timer 83.23s report track_text_preprocess 0.495 s
+debuggroup timer 83.23s report track_text_refine 0.005 s
+debuggroup timer 83.23s report unitconvert 0.041 s
+debuggroup timer 83.23s report unitconvert_decision 0.004 s
+debuggroup timer 83.23s report unitconvert_delegate 0.013 s
+debuggroup timer 83.23s report unitparse 0.189 s
