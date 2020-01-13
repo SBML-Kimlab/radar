@@ -27,7 +27,7 @@ class amr :
 		global file_usearch, file_diamond, file_circos
 		self.strain = strain
 
-		dir_user0 = path.abspath( path.join( os.getcwd() ) )
+		dir_user0 = path.abspath( path.join( os.getcwd(),"..",".." ) )
 		dir_user = dir_user0 + "/radar/"
 		main_dir = dir_user + "/pipeline/"
 		program_dir = dir_user + "/program/"
