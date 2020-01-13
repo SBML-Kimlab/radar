@@ -27,11 +27,14 @@ class amr :
 		global file_usearch, file_diamond, file_circos
 		self.strain = strain
 
-		dir_user0 = path.abspath( path.join( os.getcwd(),"..",".." ) )
-		dir_user = dir_user0 + "/radar/"
-		main_dir = dir_user + "/pipeline/"
-		program_dir = dir_user + "/program/"
-		db_dir = dir_user + "/database/"
+		#dir_user0 = path.abspath( path.join( os.getcwd(),"..",".." ) )
+		#dir_user = dir_user0 + "/radar/"
+		#main_dir = dir_user + "/pipeline/"
+		main_dir = "/pipeline/"
+		#program_dir = dir_user + "/program/"
+		program_dir = "/program/"
+		#db_dir = dir_user + "/database/"
+		db_dir = "/database/"
 		dir_wgs = main_dir + "antibiotics/genome/sequence/1.fna/" + strain + "/"
 		dir_genome = main_dir + "antibiotics/genome/annotation/2.anno/" + strain + "/"
 		dir_blast = main_dir + "antibiotics/genome/blastp/3.align/" + strain + "/"
