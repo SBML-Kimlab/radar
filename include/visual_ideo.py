@@ -15,6 +15,7 @@ class circos :
         dir_blastp = radar.dir_blastp
         dir_circos = radar.dir_circos
         dir_user = radar.dir_user
+        program_dir = radar.program_dir
         file_circos = radar.file_circos
     	#dir_db = radar.db_dir
     	#program_dir = radar.program_dir
