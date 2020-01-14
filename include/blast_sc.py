@@ -82,7 +82,8 @@ class blastp :
     		output = output.split( "\nQuery >" )
     		with open( file_tsv, "w" ) as f :
     			for output0 in output :
-    				if output0.startswith( "%s" %dir_user ) :
+    				#if output0.startswith( "%s" %dir_user ) :
+                    if output0.startswith( "%s" %file_usearch ) :
     					continue
     				output1 = output0.split( "\n" )
     				output2 = output1[ 2 ].split( )
