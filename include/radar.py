@@ -27,8 +27,8 @@ class amr :
 		global file_usearch, file_diamond, file_circos
 		self.strain = strain
 
-		dir_user0 = path.abspath( path.join( os.getcwd() ) )
-		os.chdir( dir_user0 ) 
+		dir_user = path.abspath( path.join( os.getcwd() ) )
+		os.chdir( dir_user ) 
 		#abs_piv = dir_user0.split( "/radar" )[ 0 ]
 		main_dir = "pipeline/"
 		program_dir = "program/"
