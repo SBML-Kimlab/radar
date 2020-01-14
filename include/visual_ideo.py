@@ -75,7 +75,7 @@ class circos :
             with open( txt_file0, "w" ) as f0, open( txt_file1, "w" ) as f1 :
                 for output0 in output :
                     #if output0.startswith( "%s" % dir_user ) :
-                    if output0.startswith( "/home/sierray/sbl_nas/" ) :
+                    if output0.startswith( "%s" % file_usearch ) :
                         continue
                     output1 = output0.split( "\n" )
                     #print dir_user
@@ -175,7 +175,8 @@ class circos :
             file_conf_ = dir_conf + "circos_chro_" + file_conf.replace( "fna", "conf" )
             (exitstatus, outtext) = commands.getstatusoutput( "%s " % file_circos + "-conf %s" %file_conf_ )
             print outtext
-            results = dir_user + "/script/circos"
+            #results = dir_user + "/script/circos"
+            results = "/script/circos"
             os.rename( results + ".png", results + file_conf_0 + ".png" )
             os.rename( results + ".svg", results + file_conf_0 + ".svg" )
             shutil.move( results + file_conf_0 + ".png", dir_vis + "output/" + file_conf_0 + ".png" )
