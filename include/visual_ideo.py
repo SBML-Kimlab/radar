@@ -177,7 +177,7 @@ class circos :
             (exitstatus, outtext) = commands.getstatusoutput( "%s " % file_circos + "-conf %s" %file_conf_ )
             print outtext
             #results = dir_user + "/script/circos"
-            results = "/script/circos"
+            results = "script/circos"
             os.rename( results + ".png", results + file_conf_0 + ".png" )
             os.rename( results + ".svg", results + file_conf_0 + ".svg" )
             shutil.move( results + file_conf_0 + ".png", dir_vis + "output/" + file_conf_0 + ".png" )
