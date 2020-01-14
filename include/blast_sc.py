@@ -4,110 +4,110 @@ from radar import *
 import radar
 class blastp : 
     def __init__( self, strain ) :
-    	global dir_db, program_dir, dir_genome, dir_blast, dir_blastp, dir_user, dir_result, file_ntdb, file_aadb, file_udb, file_usearch
-    	self.strain = strain
-    	dir_db = radar.db_dir
-    	program_dir = radar.program_dir
-    	dir_genome = radar.dir_genome
-    	dir_blast = radar.dir_blast
-    	dir_blastp = radar.dir_blastp
-    	dir_user = radar.dir_user
-    	dir_result = radar.dir_result
-    	file_ntdb = dir_db + "radar.fasta"
-    	file_aadb = dir_db + "radar.faa"
-    	file_udb = dir_db + "radar.udb"    	
-    	file_usearch = program_dir + "usearch" 
+        global dir_db, program_dir, dir_genome, dir_blast, dir_blastp, dir_user, dir_result, file_ntdb, file_aadb, file_udb, file_usearch
+        self.strain = strain
+        dir_db = radar.db_dir
+        program_dir = radar.program_dir
+        dir_genome = radar.dir_genome
+        dir_blast = radar.dir_blast
+        dir_blastp = radar.dir_blastp
+        dir_user = radar.dir_user
+        dir_result = radar.dir_result
+        file_ntdb = dir_db + "radar.fasta"
+        file_aadb = dir_db + "radar.faa"
+        file_udb = dir_db + "radar.udb"     
+        file_usearch = program_dir + "usearch" 
         pass
     @staticmethod
     def make_udb( strain ) :
-    	#print dir_db
-    	#print program_dir
-    	#print dir_genome
-    	#print file_ntdb
-    	#print file_aadb
-    	#print file_udb
-    	#print file_usearch
-    	if os.path.isfile( file_usearch ) == False :
-    		print "Fatal error : Cannot find usearch on ... %s" % file_usearch
-    	if os.path.isfile( file_aadb ) == False :
-    		print "Fatal error : Cannot find the peptide database on ... %s" % dir_db
-    	else :
-    		command = "%s -makeudb_ublast %s -output %s" %( file_usearch, file_aadb, file_udb ) 
-    		print command
-    		(exitstatus, outtext) = commands.getstatusoutput( "%s" % command )
-    		print outtext
-    		print "Build Database completed...%s" % file_udb
+        #print dir_db
+        #print program_dir
+        #print dir_genome
+        #print file_ntdb
+        #print file_aadb
+        #print file_udb
+        #print file_usearch
+        if os.path.isfile( file_usearch ) == False :
+            print "Fatal error : Cannot find usearch on ... %s" % file_usearch
+        if os.path.isfile( file_aadb ) == False :
+            print "Fatal error : Cannot find the peptide database on ... %s" % dir_db
+        else :
+            command = "%s -makeudb_ublast %s -output %s" %( file_usearch, file_aadb, file_udb ) 
+            print command
+            (exitstatus, outtext) = commands.getstatusoutput( "%s" % command )
+            print outtext
+            print "Build Database completed...%s" % file_udb
 
     @staticmethod
     def blastp_run( strain ) :
-    	file_faa = dir_genome + "*.faa" 
-    	lst_faa = glob.glob( file_faa )
-    	lst_faa.sort()
+        file_faa = dir_genome + "*.faa" 
+        lst_faa = glob.glob( file_faa )
+        lst_faa.sort()
 
-    	count_faa = 0 
-    	for file_faa in lst_faa :
-    		count_faa += 1
-    		faa_id = file_faa.split( "/" )[ -1 ].replace( ".faa", "" )
-    		file_out = dir_blastp + "%s.aln" % faa_id
-    		if os.path.exists( file_out ) == True and os.path.getsize( file_out ) > 10 * 1024 :
-    			continue
-    		if count_faa % 10 == 0 :
-    			clear_output()
-    		print "Processing %s" % file_faa
-    		print "Processing %d annotation files" % count_faa
-    		command = "%s -ublast %s -db %s -evalue 1e-9 -alnout %s" %( file_usearch, file_faa, file_udb, file_out )
-    		print command
-    		(exitstatus, outtext) = commands.getstatusoutput( "%s" % command )
-    		print outtext
+        count_faa = 0 
+        for file_faa in lst_faa :
+            count_faa += 1
+            faa_id = file_faa.split( "/" )[ -1 ].replace( ".faa", "" )
+            file_out = dir_blastp + "%s.aln" % faa_id
+            if os.path.exists( file_out ) == True and os.path.getsize( file_out ) > 10 * 1024 :
+                continue
+            if count_faa % 10 == 0 :
+                clear_output()
+            print "Processing %s" % file_faa
+            print "Processing %d annotation files" % count_faa
+            command = "%s -ublast %s -db %s -evalue 1e-9 -alnout %s" %( file_usearch, file_faa, file_udb, file_out )
+            print command
+            (exitstatus, outtext) = commands.getstatusoutput( "%s" % command )
+            print outtext
 
     @staticmethod
     def blastp_parse( strain ) :
-    	def read_as_string( file0 ) :
-    		with open( file0, "r" ) as f :
-    			read = f.read()
-    		return read
-    	#print dir_user
-    	lst_aln = glob.glob( dir_blastp + "*.aln" )
-    	lst_aln.sort()
-    	count_file = 0 
-    	for file_aln in lst_aln :
-    		count_file += 1
-    		if count_file % 100 == 0 :
-    			clear_output()
-    			print "Processed %d files." % count_file
-    		file_tsv = file_aln.replace( ".aln", ".tsv" )
-    		if os.path.exists( file_tsv ) == True :
-    			continue
-    		output = read_as_string( file_aln )
-    		output = output.split( "\nQuery >" )
-    		with open( file_tsv, "w" ) as f :
-    			for output0 in output :
-    				#if output0.startswith( "%s" %dir_user ) :
+        def read_as_string( file0 ) :
+            with open( file0, "r" ) as f :
+                read = f.read()
+            return read
+        #print dir_user
+        lst_aln = glob.glob( dir_blastp + "*.aln" )
+        lst_aln.sort()
+        count_file = 0 
+        for file_aln in lst_aln :
+            count_file += 1
+            if count_file % 100 == 0 :
+                clear_output()
+                print "Processed %d files." % count_file
+            file_tsv = file_aln.replace( ".aln", ".tsv" )
+            if os.path.exists( file_tsv ) == True :
+                continue
+            output = read_as_string( file_aln )
+            output = output.split( "\nQuery >" )
+            with open( file_tsv, "w" ) as f :
+                for output0 in output :
+                    #if output0.startswith( "%s" %dir_user ) :
                     if output0.startswith( "%s" %file_usearch ) :
-    					continue
-    				output1 = output0.split( "\n" )
-    				output2 = output1[ 2 ].split( )
-    				gene_from = output1[ 0 ].split( " " )[ 0 ]
-    				gene_to = output2[ 5 ]
-    				score = output2[ 0 ]
-    				evalue = output2[ 1 ]
-    				identity = output2[ 2 ]
+                        continue
+                    output1 = output0.split( "\n" )
+                    output2 = output1[ 2 ].split( )
+                    gene_from = output1[ 0 ].split( " " )[ 0 ]
+                    gene_to = output2[ 5 ]
+                    score = output2[ 0 ]
+                    evalue = output2[ 1 ]
+                    identity = output2[ 2 ]
 
-    				to_print = [ gene_from, gene_to, score, evalue, identity ]
-    				to_print = [ str( m ) for m in to_print ]
-    				to_print = ",".join( to_print )
-    				f.write( "%s\r\n" % to_print )
-    		print "Wrote... %s" %file_tsv
+                    to_print = [ gene_from, gene_to, score, evalue, identity ]
+                    to_print = [ str( m ) for m in to_print ]
+                    to_print = ",".join( to_print )
+                    f.write( "%s\r\n" % to_print )
+            print "Wrote... %s" %file_tsv
 
     @staticmethod
     def merge_after_parse( strain ) :
-    	def file_readlines( file0 ) :
-    		f = open( file0, "r" )
-    		lines = f.read().splitlines()
-    		f.close()
-    		return lines
-    	print dir_blast
-    	count_file = 0 
+        def file_readlines( file0 ) :
+            f = open( file0, "r" )
+            lines = f.read().splitlines()
+            f.close()
+            return lines
+        print dir_blast
+        count_file = 0 
         lst_identity = []
         for dir_ in os.listdir( dir_blast ) :
             file_i = dir_blast + dir_
