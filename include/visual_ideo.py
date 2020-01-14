@@ -6,7 +6,7 @@ import radar
 class circos : 
     def __init__( self, strain ) :
         global dir_vis, dir_wgs, dir_genome, dir_blastp, dir_circos, dir_user
-        global file_circos
+        global file_circos, file_usearch
     	#global dir_db, program_dir, dir_genome, dir_blast, dir_blastp, dir_user, dir_result, file_ntdb, file_aadb, file_udb, file_usearch
     	self.strain = strain
         dir_vis = radar.dir_vis
