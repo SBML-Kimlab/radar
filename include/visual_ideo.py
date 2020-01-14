@@ -26,7 +26,7 @@ class circos :
     	#file_ntdb = dir_db + "radar.fasta"
     	#file_aadb = dir_db + "radar.faa"
     	#file_udb = dir_db + "radar.udb"    	
-    	#file_usearch = program_dir + "usearch" 
+    	file_usearch = program_dir + "usearch" 
         pass
     @staticmethod
     def make_config( strain ) :
