@@ -7,7 +7,6 @@ class circos :
     def __init__( self, strain ) :
         global dir_vis, dir_wgs, dir_genome, dir_blastp, dir_circos, dir_user
         global file_circos, file_usearch
-    	#global dir_db, program_dir, dir_genome, dir_blast, dir_blastp, dir_user, dir_result, file_ntdb, file_aadb, file_udb, file_usearch
     	self.strain = strain
         dir_vis = radar.dir_vis
         dir_wgs = radar.dir_wgs
@@ -17,7 +16,8 @@ class circos :
         dir_user = radar.dir_user
         program_dir = radar.program_dir
         file_circos = radar.file_circos
-    	#dir_db = radar.db_dir
+        #global dir_db, program_dir, dir_genome, dir_blast, dir_blastp, dir_user, dir_result, file_ntdb, file_aadb, file_udb, file_usearch
+        #dir_db = radar.db_dir
     	#program_dir = radar.program_dir
     	#dir_genome = radar.dir_genome
     	#dir_blast = radar.dir_blast
