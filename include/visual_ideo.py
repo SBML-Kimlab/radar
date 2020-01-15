@@ -7,7 +7,7 @@ class circos :
     def __init__( self, strain ) :
         global dir_vis, dir_wgs, dir_genome, dir_blastp, dir_circos, dir_user
         global file_circos, file_usearch
-    	self.strain = strain
+        self.strain = strain
         dir_vis = radar.dir_vis
         dir_wgs = radar.dir_wgs
         dir_genome = radar.dir_genome
@@ -18,16 +18,16 @@ class circos :
         file_circos = radar.file_circos
         #global dir_db, program_dir, dir_genome, dir_blast, dir_blastp, dir_user, dir_result, file_ntdb, file_aadb, file_udb, file_usearch
         #dir_db = radar.db_dir
-    	#program_dir = radar.program_dir
-    	#dir_genome = radar.dir_genome
-    	#dir_blast = radar.dir_blast
-    	#dir_blastp = radar.dir_blastp
-    	#dir_user = radar.dir_user
-    	#dir_result = radar.dir_result
-    	#file_ntdb = dir_db + "radar.fasta"
-    	#file_aadb = dir_db + "radar.faa"
-    	#file_udb = dir_db + "radar.udb"    	
-    	file_usearch = program_dir + "usearch" 
+        #program_dir = radar.program_dir
+        #dir_genome = radar.dir_genome
+        #dir_blast = radar.dir_blast
+        #dir_blastp = radar.dir_blastp
+        #dir_user = radar.dir_user
+        #dir_result = radar.dir_result
+        #file_ntdb = dir_db + "radar.fasta"
+        #file_aadb = dir_db + "radar.faa"
+        #file_udb = dir_db + "radar.udb"        
+        file_usearch = program_dir + "usearch" 
         pass
     @staticmethod
     def make_config( strain ) :
@@ -183,5 +183,5 @@ class circos :
             shutil.move( results + file_conf_0 + ".png", dir_vis + "output/" + file_conf_0 + ".png" )
             shutil.move( results + file_conf_0 + ".svg", dir_vis + "output/" + file_conf_0 + ".svg" )
 
-    	#print dir_db
-    	#print program_dir
+        #print dir_db
+        #print program_dir
