@@ -22,7 +22,7 @@ from db_stat import db_statistics
 class amr :
 	def __init__( self, strain ) :
 		#Built-in: include, database, program, script.
-		print "Pipeline initiating..."
+		print ( "Pipeline initiating..." ) 
 		global dir_user, main_dir, program_dir, dir_wgs, dir_genome, db_dir, dir_blast, dir_blastp, dir_result, dir_vis, dir_circos
 		global file_usearch, file_diamond, file_circos
 		self.strain = strain
