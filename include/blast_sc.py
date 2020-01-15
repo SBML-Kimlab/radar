@@ -28,15 +28,15 @@ class blastp :
         #print file_udb
         #print file_usearch
         if os.path.isfile( file_usearch ) == False :
-            print "Fatal error : Cannot find usearch on ... %s" % file_usearch
+            print ( "Fatal error : Cannot find usearch on ... %s" % file_usearch )
         if os.path.isfile( file_aadb ) == False :
-            print "Fatal error : Cannot find the peptide database on ... %s" % dir_db
+            print ( "Fatal error : Cannot find the peptide database on ... %s" % dir_db )
         else :
             command = "%s -makeudb_ublast %s -output %s" %( file_usearch, file_aadb, file_udb ) 
-            print command
-            (exitstatus, outtext) = commands.getstatusoutput( "%s" % command )
-            print outtext
-            print "Build Database completed...%s" % file_udb
+            print ( command )
+            (exitstatus, outtext) = subprocess.getstatusoutput( "%s" % command )
+            print ( outtext )
+            print ( "Build Database completed...%s" % file_udb )
 
     @staticmethod
     def blastp_run( strain ) :
@@ -53,12 +53,12 @@ class blastp :
                 continue
             if count_faa % 10 == 0 :
                 clear_output()
-            print "Processing %s" % file_faa
-            print "Processing %d annotation files" % count_faa
+            print ( "Processing %s" % file_faa )
+            print ( "Processing %d annotation files" % count_faa )
             command = "%s -ublast %s -db %s -evalue 1e-9 -alnout %s" %( file_usearch, file_faa, file_udb, file_out )
-            print command
-            (exitstatus, outtext) = commands.getstatusoutput( "%s" % command )
-            print outtext
+            print ( command )
+            (exitstatus, outtext) = subprocess.getstatusoutput( "%s" % command )
+            print ( outtext )
 
     @staticmethod
     def blastp_parse( strain ) :
@@ -74,7 +74,7 @@ class blastp :
             count_file += 1
             if count_file % 100 == 0 :
                 clear_output()
-                print "Processed %d files." % count_file
+                print ( "Processed %d files." % count_file )
             file_tsv = file_aln.replace( ".aln", ".tsv" )
             if os.path.exists( file_tsv ) == True :
                 continue
@@ -97,7 +97,7 @@ class blastp :
                     to_print = [ str( m ) for m in to_print ]
                     to_print = ",".join( to_print )
                     f.write( "%s\r\n" % to_print )
-            print "Wrote... %s" %file_tsv
+            print ( "Wrote... %s" %file_tsv )
 
     @staticmethod
     def merge_after_parse( strain ) :
@@ -106,7 +106,7 @@ class blastp :
             lines = f.read().splitlines()
             f.close()
             return lines
-        print dir_blast
+        print ( dir_blast ) 
         count_file = 0 
         lst_identity = []
         for dir_ in os.listdir( dir_blast ) :
@@ -118,12 +118,12 @@ class blastp :
             elif count_file > 0 :
                 lst_files.extend( file_w )
                 count_file += 1
-        print ".tsv files: %d" % len( lst_files )
+        print ( ".tsv files: %d" % len( lst_files ) )
         for file0 in lst_files :
             lines = file_readlines( file0 )
             lst_identity0 = [ float( ( line.split( "," )[ 4 ] ).strip( "%" ) ) / 100 for line in lines ]
             lst_identity.extend( lst_identity0 )
-        print len( lst_identity )
+        print ( len( lst_identity ) )
 
         dir_figure_wgs = dir_result + "wgs/figure/"
         dir_table_wgs = dir_result + "wgs/table/"
@@ -161,7 +161,7 @@ class blastp :
                         to_print = [ str( m ) for m in to_print ]
                         to_print = "\t".join( to_print )
                         f.write( "%s\r\n" % to_print )
-        print "Wrote... %s" % file_blastp_merged
+        print ( "Wrote... %s" % file_blastp_merged )
         
         with open( file_blastp_merged0, "w" ) as f, open( file_blastp_merged_esbl, "w" ) as f0 :
             for line in file_readlines( file_blastp_merged ) :
@@ -182,6 +182,6 @@ class blastp :
                 if is_esbl == True :
                     f0.write( "%s\r\n" % to_print )
                 f.write( "%s\r\n" % to_print )
-        print "Wrote... %s" % file_blastp_merged0
-        print "Wrote... %s" % file_blastp_merged_esbl
-        print dic_esbl
+        print ( "Wrote... %s" % file_blastp_merged0 )
+        print ( "Wrote... %s" % file_blastp_merged_esbl )
+        print ( dic_esbl )

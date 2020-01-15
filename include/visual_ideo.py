@@ -35,7 +35,7 @@ class circos :
             with open( file0, "r" ) as f :
                 read = f.read()
             return read
-        print dir_vis
+        print ( dir_vis )
         circos_contents = circ_contents.contents_circos()
         dir_conf = dir_vis + "conf/"
         dir_contig = dir_vis + "circos/"
@@ -45,10 +45,10 @@ class circos :
         os.system( "mkdir -p %s" % dir_contig )
         os.system( "mkdir -p %s" % dir_txt )
         os.system( "mkdir -p %s" % dir_output )
-        print "Make directory... %s" % dir_conf
-        print "Make directory... %s" % dir_contig
-        print "Make directory... %s" % dir_txt
-        print "Make directory... %s" % dir_output
+        print ( "Make directory... %s" % dir_conf )
+        print ( "Make directory... %s" % dir_contig )
+        print ( "Make directory... %s" % dir_txt )
+        print ( "Make directory... %s" % dir_output )
         fix_dir = os.listdir( dir_wgs )
         for fix_x in fix_dir :
             file_name = fix_x.replace( ".fna", "" )
@@ -59,9 +59,9 @@ class circos :
                         des = contig_parse.description.split( " " )[ 0 ]
                         des_len = len( contig_parse.seq )
                         f.write( "chr - "+ des + " " + des + " 1 " + str( des_len ) + " black" + "\r\n" )
-                print "Wrote... %s" % contig_file
+                print ( "Wrote... %s" % contig_file )
             else :
-                print "Contig file already existed "
+                print ( "Contig file already existed " )
                 pass
             txt_file0 = dir_txt + "under_95_hit_%s" % file_name
             txt_file1 = dir_txt + "to_95_hit_%s" % file_name
@@ -155,27 +155,27 @@ class circos :
                     g.write( circos_contents.return_contents_3() %( num1[ 0 ], num1[ 0 ], "%01.1f" ) )
                 g.write( circos_contents.return_contents_4() %( txt_file0, txt_file1, forward_file,  reverse_file, gc_txt_file ) )
                 g.write( circos_contents.return_contents_5() %( dir_circos + "circos-0.69-6", dir_circos + "circos-0.69-6", dir_circos + "circos-0.69-6" ))
-            print "Wrote... %s " % txt_file0
-            print "Wrote... %s " % txt_file1
-            print "Wrote... %s " % gc_txt_file
-            print "Wrote... %s " % forward_file
-            print "Wrote... %s " % reverse_file
-            print "Wrote... %s " % file_conf
-            print "Wrote Process End " + fix_x
+            print ( "Wrote... %s " % txt_file0 )
+            print ( "Wrote... %s " % txt_file1 )
+            print ( "Wrote... %s " % gc_txt_file )
+            print ( "Wrote... %s " % forward_file )
+            print ( "Wrote... %s " % reverse_file )
+            print ( "Wrote... %s " % file_conf )
+            print ( "Wrote Process End " + fix_x )
     @staticmethod
     def run_circos( strain ) :
-        print dir_user
-        print dir_vis
+        print ( dir_user )
+        print ( dir_vis )
         #print dir_conf
-        print dir_wgs
+        print ( dir_wgs )
         count_circos = 0
         dir_conf = dir_vis + "conf/"
         fix_dir = os.listdir( dir_wgs )
         for file_conf in fix_dir :
             file_conf_0 = file_conf.replace( ".fna", "" )
             file_conf_ = dir_conf + "circos_chro_" + file_conf.replace( "fna", "conf" )
-            (exitstatus, outtext) = commands.getstatusoutput( "%s " % file_circos + "-conf %s" %file_conf_ )
-            print outtext
+            (exitstatus, outtext) = subprocess.getstatusoutput( "%s " % file_circos + "-conf %s" %file_conf_ )
+            print ( outtext )
             #results = dir_user + "/script/circos"
             results = "circos"
             os.rename( results + ".png", results + file_conf_0 + ".png" )
