@@ -14,7 +14,8 @@ class prodigal :
         lst_fna = glob.glob( file_wgs ) 
         lst_fna.sort()
         if lst_fna == [] :
-            print ( "\n**********\nFatal Error : No Genome sequence File ...\n on %s\n**********\n" % dir_wgs )     count_fna = 0 
+            print ( "\n**********\nFatal Error : No Genome sequence File ...\n on %s\n**********\n" % dir_wgs )
+        count_fna = 0 
         for file_wgs in lst_fna :
             count_fna += 1
             fna_id = file_wgs.split( "/" )[ -1 ].replace( ".fna", "" )
