@@ -29,7 +29,7 @@ class prodigal :
     		print ( "Processing %s" %file_wgs )
     		print ( "Processing %d wgs files" % count_fna )
     		command = "prodigal -i %s -o %s -a %s -d %s" %( file_wgs, file_gbk, file_faa, file_fna ) 
-    		(exitstatus, outtext) = commands.getstatusoutput( "%s" % command )
+    		(exitstatus, outtext) = subprocess.getstatusoutput( "%s" % command )
     		print ( outtext )
     	#print lst_fna
     	#serotype_call = sero.serotype( serovar )

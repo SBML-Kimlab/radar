@@ -5,7 +5,8 @@ import glob
 import math
 import datetime
 import shutil
-import commands
+#import commands
+import subprocess
 import os.path as path
 import pandas as pd
 import numpy as np
