@@ -178,10 +178,16 @@ class circos :
             print ( outtext )
             #results = dir_user + "/script/circos"
             results = "circos"
+            from_file0 = dir_user + "/circos_%s_%s.png" %( strain, file_conf_0 )
+            from_file1 = dir_user + "/circos_%s_%s.svg" %( strain, file_conf_0 )
+            to_file0 = dir_vis + "output/%s.png" %( file_conf_0 )
+            to_file1 = dir_vis + "output/%s.svg" %( file_conf_0 )
             os.rename( results + ".png", results + "_" + strain + "_" + file_conf_0 + ".png" )
             os.rename( results + ".svg", results + "_" + strain + "_" + file_conf_0 + ".svg" )
-            shutil.move( results + "_" + file_conf_0 + ".png", dir_vis + "output/" + file_conf_0 + ".png" )
-            shutil.move( results + "_" + file_conf_0 + ".svg", dir_vis + "output/" + file_conf_0 + ".svg" )
+            #shutil.move( results + "_" + file_conf_0 + ".png", dir_vis + "output/" + file_conf_0 + ".png" )
+            #shutil.move( results + "_" + file_conf_0 + ".svg", dir_vis + "output/" + file_conf_0 + ".svg" )
+            shutil.move( from_file0, to_file0 )
+            shutil.move( from_file1, to_file1 )
 
         #print dir_db
         #print program_dir
