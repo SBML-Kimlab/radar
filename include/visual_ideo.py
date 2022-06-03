@@ -180,8 +180,8 @@ class circos :
             results = "circos"
             os.rename( results + ".png", results + "_" + strain + "_" + file_conf_0 + ".png" )
             os.rename( results + ".svg", results + "_" + strain + "_" + file_conf_0 + ".svg" )
-            #shutil.move( results + file_conf_0 + ".png", dir_vis + "output/" + file_conf_0 + ".png" )
-            #shutil.move( results + file_conf_0 + ".svg", dir_vis + "output/" + file_conf_0 + ".svg" )
+            shutil.move( results + "_" + file_conf_0 + ".png", dir_vis + "output/" + file_conf_0 + ".png" )
+            shutil.move( results + "_" + file_conf_0 + ".svg", dir_vis + "output/" + file_conf_0 + ".svg" )
 
         #print dir_db
         #print program_dir
