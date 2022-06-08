@@ -1,2 +1,4 @@
 *.pm linguist-detectable=false
 *.txt linguist-detectable=false
+* linguist-vendored
+*.py linguist-vendored=false
