@@ -7,11 +7,14 @@ Overview:
 The RADAR pipeline takes a set of assembled bacterial strains as input ( e.g. NCBI RefSeq records or user's own data in **fasta** format).
 The RADAR pipeline automatically performs genomic annotation on wgs data and searches for genes through a local alignment process to the selected database. After this, the visualization process of the genes detected in the wgs data is performed. For all three processes, RADAR uses three other published tools: Prodigal, Usearch, and Circos.
 
+RADAR pipeline provides a pipeline for researchers unfamiliar with computing using cloud services. Therefore, google colabatory, google's cloud service, was selected and has similar performance to the local pipeline.
+
 ## Table of contents
   * [Overview of dependencies](#overview-of-dependencies)
   * [Pipeline overview](#pipeline-overview)
   * [Quick start and installing dependencies](#quick-start-and-installing-dependencies)
   * [Usage](#usage)
+  * [Quick start with Colabatory](#quick-start-with-colabatory)
 
 
 ## Pipeline overview
@@ -72,8 +75,13 @@ radar.method.blast_method.blastp_run( SPECIES, DB )
 radar.method.blast_parse_method.blastp_parse( SPECIES, cutoff )
 radar.method.blast_parse_method.blastp_merge( SPECIES, cutoff )
 ```
+## Quick start with Colabatory
 
+This notebook shows how to use the cloud-based RADAR pipeline to analyze WGS data quickly and easily. The overall structure of the pipeline is very similar to a RADAR pipeline that works locally.
+* [RADAR pipeline with colab](https://colab.research.google.com/drive/1VEGQ3Fo1G8atmQ2ZtYwwkh6M8qlUw2b3?usp=sharing).
 
-  To bring the branch association into effect for the visualization, one needs to add the generated file to the visualization repository as described in [Special feature: visualize branch association(BA) and presence/absence(PA) association](https://github.com/neherlab/pan-genome-visualization/blob/master/README.md).
-
-
+## Reference
+1. *Edgar, R. C. (2010). **Search and clustering orders of magnitude faster than BLAST.** _Bioinformatics_, _26_(19), 2460-2461.*
+2. *Krzywinski, M., Schein, J., Birol, I., Connors, J., Gascoyne, R., Horsman, D., ... & Marra, M. A. (2009). **Circos: an information aesthetic for comparative genomics.** _Genome research_, _19_(9), 1639-1645.*
+3. *Hyatt, D., Chen, G. L., LoCascio, P. F., Land, M. L., Larimer, F. W., & Hauser, L. J. (2010). **Prodigal: prokaryotic gene recognition and translation initiation site identification.**_BMC bioinformatics_, _11_(1), 1-11.*
+4. *Alcock, B. P., Raphenya, A. R., Lau, T. T., Tsang, K. K., Bouchard, M., Edalatmand, A., ... & McArthur, A. G. (2020). **CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic resistance database.** _Nucleic acids research_, _48_(D1), D517-D525.*
