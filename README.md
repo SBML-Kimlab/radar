@@ -79,7 +79,7 @@ radar.method.blast_parse_method.blastp_merge( SPECIES, cutoff )
 
 This notebook shows how to use the cloud-based RADAR pipeline to analyze WGS data quickly and easily. The overall structure of the pipeline is very similar to a RADAR pipeline that works locally.
 * [(outdated)RADAR pipeline with colab](https://colab.research.google.com/drive/1VEGQ3Fo1G8atmQ2ZtYwwkh6M8qlUw2b3?usp=sharing).
-* [RADAR pipeline with colab](https://colab.research.google.com/drive/1VEGQ3Fo1G8atmQ2ZtYwwkh6M8qlUw2b3?usp=sharing).
+* [RADAR pipeline with colab](https://colab.research.google.com/drive/1H0m9fSBU5xnPZEHam36XcAxVOwyBRf_g?usp=sharing).
 
 ## Reference
 1. *Edgar, R. C. (2010). **Search and clustering orders of magnitude faster than BLAST.** _Bioinformatics_, _26_(19), 2460-2461.*
