@@ -1,12 +1,7 @@
 #for local
-import os
-import sys
-import glob
-import math
-import datetime
-import shutil
+import os, sys, glob, math, datetime, shutil, subprocess
 #import commands
-import subprocess
+
 import os.path as path
 import pandas as pd
 import numpy as np
@@ -16,7 +11,7 @@ import matplotlib.pyplot as plt
 from matplotlib import rc
 from IPython.display import clear_output
 from Bio import SeqIO
-import blast_sc0, blast_sc1, visual_ideo, circ_contents
+import blast_sc0, blast_sc1, visual_ideo, circ_contents, cluster_sc, report_sc
 from prodigal_sc import prodigal
 from db_stat import db_statistics
 
@@ -24,7 +19,8 @@ class amr :
 	def __init__( self, strain, db ) :
 		#Built-in: include, database, program, script.
 		print ( "Pipeline initiating..." ) 
-		global dir_user, main_dir, program_dir, dir_wgs, dir_genome, db_dir, dir_blast, dir_blastp, dir_result, dir_vis, dir_circos
+		global dir_user, main_dir, program_dir, dir_wgs, dir_genome, dir_cluster, db_dir, include_dir
+		global dir_blastp, dir_result, dir_vis, dir_circos
 		global file_usearch, file_diamond, file_circos
 		self.strain = strain
 		self.db = db 
@@ -35,18 +31,21 @@ class amr :
 		main_dir = "pipeline/"
 		program_dir = "program/"
 		db_dir = "database/"
-		dir_wgs = main_dir + "antibiotics/genome/sequence/1.fna/" + strain + "/"
-		dir_genome = main_dir + "antibiotics/genome/annotation/2.anno/" + strain + "/"
-		dir_blast = main_dir + "antibiotics/genome/blastp/3.align/" + strain + "/"
-		dir_blastp = dir_blast + strain + "/"
-		dir_result = main_dir + "antibiotics/result/"
-		dir_vis = main_dir + "antibiotics/visual/" + strain + "/"
+		include_dir = "include/"
+		dir_wgs = main_dir + "genome/sequence/1.fna/%s/" % strain 
+		dir_genome = main_dir + "genome/annotation/2.anno/%s/" %strain
+		dir_blastp = main_dir + "genome/blastp/3.align/%s/" %strain
+		dir_cluster = main_dir + "genome/cluster/4.cluster/%s/" %strain
+		#dir_blastp = dir_blast + strain + "/"
+		dir_result = main_dir + "result/"
+		dir_vis = main_dir + "visual/" + strain + "/"
 		dir_circos = program_dir + "circos/"
 		file_circos = dir_circos + "circos-0.69-6/bin/circos"
 		os.system( "mkdir -p %s" % main_dir )
 		os.system( "mkdir -p %s" % dir_wgs ) 
 		os.system( "mkdir -p %s" % dir_genome )
 		os.system( "mkdir -p %s" % dir_blastp )
+		os.system( "mkdir -p %s" % dir_cluster )
 		os.system( "mkdir -p %s" % dir_result )
 		os.system( "mkdir -p %s" % dir_vis )
 
@@ -82,8 +81,12 @@ class amr :
 			def blastp_merge( strain, cutoff ) :
 				call_class1_4 = blast_sc1.blastp( strain, cutoff )
 				call_class1_4.merge_after_parse( strain, cutoff )
+			@staticmethod
+			def snp_out( strain, cutoff ) :
+				call_class1_5 = blast_sc1.blastp( strain, cutoff )
+				call_class1_5.wgs_snp_landscape( strain, cutoff )
 		@staticmethod
-		class visual_method( ) :
+		class genome_visual( ) :
 			def __init__( self ) :
 				pass
 			@staticmethod
@@ -94,4 +97,24 @@ class amr :
 			def run_circos( strain ) :
 				call_class2_2 = visual_ideo.circos( strain )
 				call_class2_2.run_circos( strain )
+
+		@staticmethod
+		class cluster_parse_method( ) :
+			def __init__( self ) : 
+				pass
+			@staticmethod
+			def hit_cluster( strain, cutoff ) :
+				call_class3_1 = cluster_sc.cluster( strain, cutoff ) 
+				call_class3_1.cluster_hit( strain, cutoff )
+
+		@staticmethod
+		class wgs_report( ) :
+			def __init__( self ) :
+				pass
+			@staticmethod
+			def report_out( strain, cutoff ) :
+				call_class4_1 = report_sc.report( strain, cutoff ) 
+				call_class4_1.results_report( strain, cutoff )
+
+
 
