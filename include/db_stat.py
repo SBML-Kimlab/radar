@@ -11,11 +11,11 @@ class db_statistics :
     def db_stat( strain, db ) :
         dir_db = radar.db_dir
         db0 = db.replace( ".faa", "" )
-        if db0 == "BARDS" : 
-            file_ntdb = dir_db + "BARDS.fasta"; file_aadb = dir_db + "BARDS.faa"; file_udb = dir_db + "BARDS.udb"
+        if db0 == "BOARDS" : 
+            file_ntdb = dir_db + "BOARDS.fasta"; file_aadb = dir_db + "BOARDS.faa"; file_udb = dir_db + "BOARDS.udb"
             if os.path.isfile( file_ntdb ) == False :
                 print ( "Fatal error : No nucleotide database on ... %s" % dir_db )
-                print ( "Please Download RADAR DB(nt) on website" )
+                print ( "Please Download BOARDS DB(nt) on website" )
             else :
                 ntdb_open = open( file_ntdb )
                 dic_ntdb = SeqIO.to_dict( SeqIO.parse( ntdb_open, "fasta" ) )
