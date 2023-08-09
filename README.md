@@ -33,18 +33,7 @@ pip install -r requirements.txt
   * Genome annotation: [Prodigal](https://github.com/hyattpd/Prodigal)
   * Local alignment tool: [Usearch](https://www.drive5.com/usearch/)
   * Ideogram visualization: [Circos](http://circos.ca/)
-##### 2-1. Genome Annotation
-```
-apt-get install prodigal
-```
-##### 2-2. Visualization 
-```
-# Dependencies for Circos ideogram
-apt-get install libgd-dev
-apt-get install cpanminus
-#Installation software
-cpanm Clone Config::General Font::TTF::Font GD GD::Polyline Math::Bezier Math::Round Math::VecStat Params::Validate Readonly Regexp::Common SVG Set::IntSpan Statistics::Basic Text::Format
-```
+
 ## Usage
 
 In the RADAR pipeline, there are eight different modules in detail. Each process is performed according to defined modules. Users can directly use the individual modules as shown below, so all processes can be executed at once.
