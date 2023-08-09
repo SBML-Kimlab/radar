@@ -4,3 +4,8 @@ seaborn==0.11.2
 matplotlib==3.5.1
 biopython==1.79
 runipy==0.1.5
+umap-learn==0.5.3
+fair-esm==2.0.0
+plotly==5.15.0
+toytree==1.0.3
+toyplot==1.0.3
