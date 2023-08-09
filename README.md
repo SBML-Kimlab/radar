@@ -60,14 +60,18 @@ radar = amr( SPECIES, DB )
 radar.method.prodigal( SPECIES) 
 radar.method.db_statistics( SPECIES, DB )
 radar.method.blast_method.udb_making( SPECIES, DB )
-radar.method.blast_method.blastp_run( SPECIES, DB ) 
+radar.method.blast_method.blastp_run( SPECIES, DB )
 radar.method.blast_parse_method.blastp_parse( SPECIES, cutoff )
 radar.method.blast_parse_method.blastp_merge( SPECIES, cutoff )
+radar.method.blast_parse_method.snp_out( SPECIES, cutoff )
+radar.method.genome_visual.make_config_files( SPECIES )
+radar.method.genome_visual.run_circos( SPECIES )
+radar.method.cluster_parse_method.hit_cluster( SPECIES, cutoff )
+radar.method.wgs_report.report_out( SPECIES, cutoff )
 ```
 ## Quick start with Colabatory
 
 This notebook shows how to use the cloud-based RADAR pipeline to analyze WGS data quickly and easily. The overall structure of the pipeline is very similar to a RADAR pipeline that works locally.
-* [(outdated)RADAR pipeline with colab](https://colab.research.google.com/drive/1VEGQ3Fo1G8atmQ2ZtYwwkh6M8qlUw2b3?usp=sharing).
 * [RADAR pipeline with colab](https://colab.research.google.com/drive/1H0m9fSBU5xnPZEHam36XcAxVOwyBRf_g?usp=sharing).
 
 ## Reference
