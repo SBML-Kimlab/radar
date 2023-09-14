@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-In the RADAR pipeline, there are eight different modules in detail. Each process is performed according to defined modules. Users can directly use the individual modules as shown below, so all processes can be executed at once.
+In the RADAR pipeline, there are eleven different modules in detail. Each process is performed according to defined modules. Users can directly use the individual modules as shown below, so all processes can be executed at once.
 
 
 ```
