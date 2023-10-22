@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+from IPython.core.display import display, HTML
 
 class blastp : 
     def __init__( self, strain, cutoff ) :
@@ -102,8 +103,8 @@ class blastp :
             output = read_as_string( file_aln )
             output = output.split( "\nQuery >" )
             with open( file_tsv0, "w" ) as f, open( file_tsv1, "w" ) as g :
-                f.write( "gene_id\ttarget\tscore\tevalue\tidentity\tcoverage\tdetection_summary\tsnp_event\tsnp_models\tfrequency of detection\n")
-                g.write( "gene_id\ttarget\tscore\tevalue\tidentity\tcoverage\tdetection_summary\tsnp_event\tsnp_models\tfrequency of detection\n")
+                f.write( "gene_id\ttarget\tscore\tevalue\tidentity\tcoverage\tdetection_summary\tsnp_event\tsnp_models\tsnp_model_idx\tfrequency of detection\n")
+                g.write( "gene_id\ttarget\tscore\tevalue\tidentity\tcoverage\tdetection_summary\tsnp_event\tsnp_models\tsnp_model_idx\tfrequency of detection\n")
                 for output0 in output : 
                     if output0.startswith( "program" ) : continue
                     output1 = output0.split( "\n" )
@@ -117,8 +118,8 @@ class blastp :
                     query_align = output2[ 3 ]
                     coverage = cal_coverage( query_align )        
                     if identity == 1.0 : 
-                        detection_event = "Perfect"; snp_event = "no SNP"; snp_models = "N/A"; fod = "N/A"
-                        to_print = [ gene_from, gene_to, score, evalue, identity, coverage, detection_event, snp_event, snp_models, fod ]
+                        detection_event = "Perfect"; snp_event = "no SNP"; snp_models = "N/A"; snp_model_idx = "N/A"; fod = "N/A"
+                        to_print = [ gene_from, gene_to, score, evalue, identity, coverage, detection_event, snp_event, snp_models, snp_model_idx, fod ]
                     elif identity >= 0.9 and identity < 1.0 :     
                         spl_msa1 = ( "\nQry " + "\nQry ".join( spl_msa0.split( "\nQry ")[ 1: ] ) ).split( "\n" )[ :-1 ]
                         msa = list( filter( bool, spl_msa1 ) )
@@ -128,10 +129,11 @@ class blastp :
                         hit_boards_idx = int( gene_to.split( "|" )[ 0 ].replace( "_BOARDS", "" ) )
                         dic_mut = check_fod( hit_boards_idx, mutations )
                         if not dic_mut : 
-                            snp_models = "Not detected"; fod = "N/A" 
-                            to_print = [ gene_from, gene_to, score, evalue, identity, coverage, detection_event, snp_event, snp_models, fod ]
+                            snp_models = "Not detected"; snp_model_idx = "N/A"; fod = "N/A" 
+                            to_print = [ gene_from, gene_to, score, evalue, identity, coverage, detection_event, snp_event, snp_models, snp_model_idx, fod ]
                         else :
                             snp_models = "Detected"; fod_list = list()        
+                            snp_model_idx = hit_boards_idx
                             for mutation in mutations :
                                 if mutation not in dic_mut :
                                     fod_list.append( "%s-NewSNP" % mutation )
@@ -143,10 +145,10 @@ class blastp :
                                             fod_list.append( "%s-%s-%s" %( mutation, host, fod_val ) )
                                 fod_list.append( "|" )
                             fod = ",".join( fod_list )                
-                            to_print = [ gene_from, gene_to, score, evalue, identity, coverage, detection_event, snp_event, snp_models, fod ]            
+                            to_print = [ gene_from, gene_to, score, evalue, identity, coverage, detection_event, snp_event, snp_models, snp_model_idx, fod ]            
                     elif identity < 0.9 : 
-                        detection_event = "Poorly"; snp_event = "SNP not applicable"; snp_models = "N/A"; fod = "N/A"
-                        to_print = [ gene_from, gene_to, score, evalue, identity, coverage, detection_event, snp_event, snp_models, fod ]
+                        detection_event = "Poorly"; snp_event = "SNP not applicable"; snp_models = "N/A"; snp_model_idx = "N/A"; fod = "N/A"
+                        to_print = [ gene_from, gene_to, score, evalue, identity, coverage, detection_event, snp_event, snp_models, snp_model_idx, fod ]
                     if float( to_print[ 4 ] ) >= cutoff : 
                         to_print1 = [ str( m ) for m in to_print ]
                         to_print1 = "\t".join( to_print1 ) 
@@ -202,8 +204,9 @@ class blastp :
         file_blastp_merged_esbl = file_blastp_merged.replace( ".tsv", "_esbl.tsv" )
         lst_esbl = [ "TEM", "SHV", "CTX", "KPC", "VIM", "IMP", "NDM", "CMY", "Amp", "OXA", "GES", "PER" ]
         dic_esbl = {}
+        data_list = list()
         with open( file_blastp_merged, "w" ) as f :
-            f.write( "genome_id\tgene_id\ttarget\tscore\tevalue\tp.identity\tcoverage\tdetection_summary\tsnp_detect\n" )
+            f.write( "genome_id\tgene_id\ttarget\tscore\tevalue\tp.identity\tcoverage\tdetection_summary\tsnp_detect\tsnp_model\tsnp_model_idx\n" )
             for file0 in lst_files :
                 genome_id = file0.split( "/" )[ -1 ].replace( ".tsv", "" )
                 if "_" in genome_id :
@@ -214,13 +217,28 @@ class blastp :
                     line0 = line.split( "\t" )
                     if float( line0[ 4 ] ) >= cutoff : 
                         if line0[ 7 ] != "no SNP" and line0[ 7 ] != "SNP not applicable" :
-                            to_print = [ genome_id, line0[ 0 ], line0[ 1 ], line0[ 2 ], line0[ 3 ], line0[ 4 ], line0[ 5 ], line0[ 6 ], "SNP detected" ]
+                            to_print = [ genome_id, line0[ 0 ], line0[ 1 ], line0[ 2 ], line0[ 3 ], line0[ 4 ], line0[ 5 ], line0[ 6 ], "SNP detected", line0[ 8 ], line0[ 9 ] ]
+                            if line0[ 8 ] == "Detected" : 
+                                model_index = int( line0[ 9 ] )
+                                base_url = "https://sbml.unist.ac.kr/psp/"
+                                data_list.append( {
+                                    "genome_id" : genome_id,
+                                    "gene_id" : line0[ 0 ],
+                                    "snp_detect" : line0[ 8 ],
+                                    "SNPmodel_index" : line0[ 9 ],
+                                    "ref_model": f'<a href="{base_url + line0[9] + "_BOARDS/ref_model/ranked_0.pdb"}">Download</a>' if line0[9] else None,
+                                    "snp_model(AF2)": f'<a href="{base_url + line0[9] + "_BOARDS/mut_model/af2/0/ranked_0.pdb"}">Download</a>' if line0[9] else None,
+                                    "snp_model(RTF)": f'<a href="{base_url + line0[9] + "_BOARDS/mut_model/rtf/0/model_1.lddt.pdb"}">Download</a>'if line0[9] else None
+                                } )
                         else : 
-                            to_print = [ genome_id, line0[ 0 ], line0[ 1 ], line0[ 2 ], line0[ 3 ], line0[ 4 ], line0[ 5 ], line0[ 6 ], line0[ 7 ] ]
+                            to_print = [ genome_id, line0[ 0 ], line0[ 1 ], line0[ 2 ], line0[ 3 ], line0[ 4 ], line0[ 5 ], line0[ 6 ], line0[ 7 ], line0[ 8 ], line0[ 9 ] ]
                         to_print = [ str( m ) for m in to_print ]
                         to_print = "\t".join( to_print )
                         f.write( "%s\n" %to_print )
         print ( "Wrote... %s" % file_blastp_merged )
+        df = pd.DataFrame(data_list)
+        display(HTML(df.to_html(escape=False, index=False)))
+        #display(df[['genome_id', 'gene_id', 'snp_detect', 'ref_model', 'snp_model(AF2)', 'snp_model(RTF)']])
         
         with open( file_blastp_merged0, "w" ) as f, open( file_blastp_merged_esbl, "w" ) as f0 :
             f.write( "genome_id\tgene_id\ttarget\tscore\tevalue\tp.identity\tcoverage\tdetection_summary\tsnp_detect\n" )
