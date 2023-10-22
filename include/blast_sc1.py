@@ -236,10 +236,21 @@ class blastp :
                         to_print = "\t".join( to_print )
                         f.write( "%s\n" %to_print )
         print ( "Wrote... %s" % file_blastp_merged )
-        df = pd.DataFrame(data_list)
-        display(HTML(df.to_html(escape=False, index=False)))
-        #display(df[['genome_id', 'gene_id', 'snp_detect', 'ref_model', 'snp_model(AF2)', 'snp_model(RTF)']])
-        
+        df = pd.DataFrame( data_list )
+        display( HTML( df.to_html( escape = False, index = False ) ) )
+        with pd.ExcelWriter( dir_table_wgs + "detected_snp.xlsx", engine = "xlsxwriter" ) as writer :
+            df.to_excel( writer, sheet_name = "Sheet1", index = False )
+            workbook = writer.book
+            worksheet = writer.sheets[ "Sheet1" ]
+            url_columns = [ "ref_model", "snp_model(AF2)", "snp_model(RTF)" ]
+            for col_num, col_name in enumerate( df.columns, 0 ) :
+                if col_name in url_columns :
+                    for row_num, value in enumerate( df[ col_name ], 1 ) :
+                        if pd.notna( value ) :
+                            url = value.split( '"' )[ 1 ]
+                            display_text = value.split( '>' )[ 1 ].split( '<' )[ 0 ]
+                            worksheet.write_url( row_num, col_num, url, string = display_text )
+            
         with open( file_blastp_merged0, "w" ) as f, open( file_blastp_merged_esbl, "w" ) as f0 :
             f.write( "genome_id\tgene_id\ttarget\tscore\tevalue\tp.identity\tcoverage\tdetection_summary\tsnp_detect\n" )
             f0.write( "genome_id\tgene_id\ttarget\tscore\tevalue\tp.identity\tcoverage\tdetection_summary\tsnp_detect\n" )
